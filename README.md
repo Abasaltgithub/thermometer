@@ -21,9 +21,8 @@ The HTU21D-F Temperature + Humidity Sensor is a precise and intelligent I2C digi
 To get started with this project, you will need the following hardware:
 
 - HTU21D-F Temperature and Humidity Sensor
-- Arduino board (e.g., Arduino Uno)
+- Arduino board (e.g., Arduino Nano, Seeeduino Xiao)
 - Jumper wires
-- Breadboard (optional)
 
 ## Installation
 
