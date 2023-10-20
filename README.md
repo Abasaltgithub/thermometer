@@ -1,7 +1,5 @@
 # HTU21D-F Temperature and Humidity Sensor with Arduino
 
-![HTU21D-F Sensor](sensor_image.jpg)
-
 This repository contains the code and documentation for interfacing the HTU21D-F temperature and humidity sensor with an Arduino. With this project, you can read temperature and humidity data from the sensor and use it for various applications.
 
 ## Table of Contents
