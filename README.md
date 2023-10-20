@@ -14,7 +14,7 @@ This repository contains the code and documentation for interfacing the HTU21D-F
 
 ## Introduction
 
-The HTU21D-F sensor is a reliable and accurate digital sensor that measures temperature and humidity. It is suitable for various applications such as weather stations, environmental monitoring, and IoT projects. This repository provides the code and instructions for connecting and reading data from the HTU21D-F sensor using an Arduino.
+The HTU21D-F Temperature + Humidity Sensor is a precise and intelligent I2C digital humidity sensor. It offers accurate humidity measurements with typical accuracy within ±2% over a range of 5% to 95% relative humidity. Temperature measurements are accurate within ±1°C from -30°C to 90°C. The breakout board includes a PTFE filter for sensor protection, a 3.3V regulator, and I2C level shifting circuitry, making it compatible with microcontrollers operating at 3.3V to 5V. The STEMMA QT form factor and connectors allow easy interfacing, and it can be used with SparkFun Qwiic I2C connectors. Each order includes a fully assembled PCB breakout and header, which requires soldering for use in a breadboard.
 
 ## Hardware Requirements
 
