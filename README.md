@@ -22,6 +22,7 @@ To kickstart your project, you will need the following hardware components:
 - HTU21D-F Temperature and Humidity Sensor
 - Arduino board (e.g., Arduino Nano, Seeeduino Xiao)
 - Jumper wires
+- USB hub
 
 ## Installation
 
@@ -44,11 +45,8 @@ To kickstart your project, you will need the following hardware components:
 ## Usage
 
 1. After successfully uploading the code to your Arduino, open the Serial Monitor by navigating to `Tools > Serial Monitor` in the Arduino IDE.
-
 2. Set the baud rate in the Serial Monitor to the same value specified in the Arduino code, typically 9600 baud.
-
 3. The sensor will initiate the process of reading temperature and humidity data and promptly display it within the Serial Monitor.
-
 4. You can leverage this data for your specific project or tailor the code to meet your specific requirements.
 
 ## Reading using VC
