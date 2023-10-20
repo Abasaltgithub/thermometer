@@ -1,7 +1,6 @@
-# HTU21D-F Temperature and Humidity Sensor with Arduino
+# Arduino Interface for HTU21D-F Temperature and Humidity Sensor
 
-
-This repository contains the code and documentation for interfacing the HTU21D-F temperature and humidity sensor with an Arduino. With this project, you can read temperature and humidity data from the sensor and use it for various applications.
+Welcome to the Arduino interface for the HTU21D-F temperature and humidity sensor. In this repository, you will find the necessary code and documentation to seamlessly connect and communicate with the HTU21D-F sensor using your Arduino board. This project empowers you to collect precise temperature and humidity data from the sensor and leverage it for a wide range of applications.
 
 ## Table of Contents
 
@@ -9,16 +8,16 @@ This repository contains the code and documentation for interfacing the HTU21D-F
 - [Hardware Requirements](#hardware-requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
-The HTU21D-F Temperature + Humidity Sensor is a precise and intelligent I2C digital humidity sensor. It offers accurate humidity measurements with typical accuracy within ±2% over a range of 5% to 95% relative humidity. Temperature measurements are accurate within ±1°C from -30°C to 90°C. The breakout board includes a PTFE filter for sensor protection, a 3.3V regulator, and I2C level shifting circuitry, making it compatible with microcontrollers operating at 3.3V to 5V. The STEMMA QT form factor and connectors allow easy interfacing, and it can be used with SparkFun Qwiic I2C connectors. Each order includes a fully assembled PCB breakout and header, which requires soldering for use in a breadboard.
+The HTU21D-F Temperature + Humidity Sensor is a highly accurate I2C digital humidity sensor, boasting an intelligent design. It provides precise humidity measurements with an impressive typical accuracy of ±2% within a range of 5% to 95% relative humidity. Temperature measurements are equally reliable, accurate within ±1°C, spanning from -30°C to 90°C.
+
+The breakout board includes several features to enhance usability, including a PTFE filter for sensor protection, a 3.3V regulator, and I2C level shifting circuitry. This makes it compatible with microcontrollers operating at voltages ranging from 3.3V to 5V. The STEMMA QT form factor and connectors ensure straightforward interfacing, and it can be used seamlessly with SparkFun Qwiic I2C connectors. Each order includes a fully assembled PCB breakout and header, which may require soldering for use in a breadboard.
 
 ## Hardware Requirements
 
-To get started with this project, you will need the following hardware:
+To kickstart your project, you will need the following hardware components:
 
 - HTU21D-F Temperature and Humidity Sensor
 - Arduino board (e.g., Arduino Nano, Seeeduino Xiao)
@@ -26,36 +25,34 @@ To get started with this project, you will need the following hardware:
 
 ## Installation
 
-1. **Wiring**: Connect the HTU21D-F sensor to your Arduino board using jumper wires. Make sure to connect the VCC, GND, SDA, and SCL pins correctly. You can refer to the datasheet or the provided example wiring diagram for guidance.
+1. **Wiring**: Begin by connecting the HTU21D-F sensor to your Arduino board using jumper wires. Ensure that you connect the VCC (3.3V), GND, SDA (A4 pin), and SCL (A5 pin) pins correctly. For guidance, you can refer to the datasheet or the example wiring diagram provided.
 
-2. **Arduino IDE**: Ensure you have the Arduino IDE installed on your computer. If not, download and install it from the [Arduino website](https://www.arduino.cc/en/software).
+2. **Arduino IDE**: Confirm that you have the Arduino IDE installed on your computer. If it's not already installed, you can download it from the [Arduino website](https://www.arduino.cc/en/software). For Visual Studio users, PlatformIO is employed in this project.
 
-3. **Library Installation**: Install the HTU21D-F sensor library for Arduino. You can do this via the Arduino Library Manager. Open the Arduino IDE, go to `Sketch > Include Library > Manage Libraries`, search for "HTU21D-F," and click "Install."
+3. **Library Installation**: Install the HTU21D-F sensor library for Arduino. You can achieve this through the Arduino Library Manager. Open the Arduino IDE, navigate to `Sketch > Include Library > Manage Libraries`, search for "HTU21D-F," and then click "Install." If you're using PlatformIO, you must add the following to your Platformio.ini file:
 
-4. **Upload Code**: Open the Arduino IDE and load the example sketch provided in this repository (`htu21d_example.ino`). Upload the code to your Arduino board.
+   ```
+   [env:nanoatmega328new]
+   platform = atmelavr
+   board = nanoatmega328new
+   framework = arduino
+   lib_deps = adafruit/Adafruit HTU21DF Library@^1.1.2
+   ```
+
+4. **Upload Code**: Launch the Arduino IDE and load the example sketch found in this repository (`arduino_HTU21D_F_with_LED_blink.cpp`). Then, upload the code to your Arduino board.
 
 ## Usage
 
-1. After uploading the code to your Arduino, open the Serial Monitor (under `Tools > Serial Monitor`) in the Arduino IDE.
+1. After successfully uploading the code to your Arduino, open the Serial Monitor by navigating to `Tools > Serial Monitor` in the Arduino IDE.
 
-2. Set the baud rate in the Serial Monitor to the same value specified in the Arduino code (typically 9600 baud).
+2. Set the baud rate in the Serial Monitor to the same value specified in the Arduino code, typically 9600 baud.
 
-3. The sensor will start reading temperature and humidity data and display it in the Serial Monitor.
+3. The sensor will initiate the process of reading temperature and humidity data and promptly display it within the Serial Monitor.
 
-4. You can use this data for your specific project or modify the code to suit your needs.
+4. You can leverage this data for your specific project or tailor the code to meet your specific requirements.
 
-## Contributing
+## Reading using VC
 
-If you'd like to contribute to this project, please follow these guidelines:
+If you prefer to read the thermometer output via a serial connection in VC (Visual Studio), you can utilize the provided script (`read_HTU21d.py`). This script allows you to read the data, and if you wish to visualize the results, you can use `plot_multiples_HTU21D.py`.
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with clear, concise commit messages.
-4. Push your changes to your fork.
-5. Create a pull request with a detailed description of your changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Feel free to reach out with any questions or issues related to this project. Enjoy working with the HTU21D-F sensor and Arduino!
+Feel free to explore and adapt this interface to meet your unique project needs.
