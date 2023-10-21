@@ -58,4 +58,4 @@ Feel free to explore and adapt this interface to meet your unique project needs.
 ![Thermometer](/S5.png)
 
 ## AI-based thermometer
-![Thermometer](/S5_temp.png)
+<img src="S5_temp.png" width="500">
