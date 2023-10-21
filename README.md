@@ -58,4 +58,4 @@ Feel free to explore and adapt this interface to meet your unique project needs.
 <img src="S5.png" width="700">
 
 ## AI-based thermometer
-<img src="S5_temp.png" width="700">
+<img src="S5_temp.png" width="600">
