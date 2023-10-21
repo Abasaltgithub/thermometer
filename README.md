@@ -59,4 +59,6 @@ Feel free to explore and adapt this interface to meet your unique project needs.
 
 ## AI-based thermometer
 I deployed multiple thermometers around the target location, collected data, and employed machine learning to predict and present the results for the target location.
+
+
 <img src="S5_temp.png" width="600">
