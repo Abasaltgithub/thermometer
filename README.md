@@ -56,3 +56,6 @@ If you prefer to read the thermometer output via a serial connection in VC (Visu
 Feel free to explore and adapt this interface to meet your unique project needs.
 
 ![Thermometer](/S5.png)
+
+## AI-based thermometer
+![Thermometer](/S5_temp.png)
