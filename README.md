@@ -53,9 +53,7 @@ To kickstart your project, you will need the following hardware components:
 
 ## Reading using VC
 
-If you prefer to read the thermometer output via a serial connection in VC (Visual Studio), you can utilize the provided script (`read_HTU21d.py`). This script allows you to read the data, and if you wish to visualize the results, you can use `plot_multiples_HTU21D.py`.
-
-Feel free to explore and adapt this interface to meet your unique project needs.
+If you'd rather access the thermometer's readings through a serial connection in Visual Studio (VC), you can use the supplied script named `read_HTU21d.py`. This script enables you to access the data. If you want to display the results, you can use `plot_multiples_HTU21D.py`, which, in my case, plots data from 5 sensors.
 
 <img src="S5.png" width="700">
 
