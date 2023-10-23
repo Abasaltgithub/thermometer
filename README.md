@@ -32,7 +32,7 @@ To kickstart your project, you will need the following hardware components:
 
 2. **Arduino IDE**: Confirm that you have the Arduino IDE installed on your computer. If it's not already installed, you can download it from the [Arduino website](https://www.arduino.cc/en/software). For Visual Studio users, PlatformIO is employed in this project.
 
-3. **Library Installation**: Install the HTU21D-F sensor library for Arduino. You can achieve this through the Arduino Library Manager. Open the Arduino IDE, navigate to `Sketch > Include Library > Manage Libraries`, search for "HTU21D-F," and then click "Install." If you're using PlatformIO, you must add the following to your Platformio.ini file:
+3. **Library Installation**: Install the HTU21D-F sensor library for Arduino. You can achieve this through the Arduino Library Manager. Open the Arduino IDE, navigate to `Sketch > Include Library > Manage Libraries`, search for "HTU21DF," and then install the library." If you're using PlatformIO, you must have the following lines in your Platformio.ini file:
 
    ```
    [env:nanoatmega328new]
@@ -42,7 +42,7 @@ To kickstart your project, you will need the following hardware components:
    lib_deps = adafruit/Adafruit HTU21DF Library@^1.1.2
    ```
 
-4. **Upload Code**: Launch the Arduino IDE and load the example sketch found in this repository (`arduino_HTU21D_F_with_LED_blink.cpp`). Then, upload the code to your Arduino board.
+4. **Upload Code**: Open the Arduino IDE and import the sample sketch located within this repository, named `arduino_HTU21D_F_with_LED_blink.cpp`. In this illustration, the LED attached to pin number 8 blinks whenever a reading occurs.
 
 ## Usage
 
